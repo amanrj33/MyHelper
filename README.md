@@ -41,6 +41,21 @@ dependencies {
 }
 ```
 
+Some must-have dependencies to include in your project for successful sync
+--------------------------------------------------------------------------
+
+1. Gson: For API base implementation
+2. Easy Permissions: For permission base implementation
+3. Swipe Refresh Layout: For refresh handling
+   
+```gradle
+dependencies {
+    implementation 'com.google.code.gson:gson:2.10.1'
+    implementation 'pub.devrel:easypermissions:3.0.0'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+}
+```
+
 How do I use MyHelper?
 ----------------------
 
@@ -93,21 +108,6 @@ Simple use cases will look something like this:
       }
   }
   ```
-
-Some must-have dependencies to include in your project for successful sync
---------------------------------------------------------------------------
-
-1. Gson: For API base implementation
-2. Easy Permissions: For permission base implementation
-3. Swipe Refresh Layout: For refresh handling
-   
-```gradle
-dependencies {
-    implementation 'com.google.code.gson:gson:2.10.1'
-    implementation 'pub.devrel:easypermissions:3.0.0'
-    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
-}
-```
 
 Contributions
 -------------
