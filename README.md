@@ -35,7 +35,7 @@ repositories {
 }
 
 dependencies {
-	        implementation 'com.github.amanrj33:MyHelper:1.0.4'
+	 implementation 'com.github.amanrj33:MyHelper:1.0.4'
 }
 ```
 
