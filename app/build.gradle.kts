@@ -46,5 +46,6 @@ dependencies {
 
     implementation(libs.gson)
     implementation(libs.easypermissions)
-    implementation(project(":my-helper"))
+
+//    implementation (libs.myhelper)
 }
