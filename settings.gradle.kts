@@ -21,3 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "MyBaseHelper"
 include(":app")
+include(":my-helper")
