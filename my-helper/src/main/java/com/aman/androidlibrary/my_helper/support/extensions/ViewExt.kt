@@ -10,7 +10,6 @@ import android.view.inputmethod.InputMethodManager
 import android.widget.CompoundButton
 import android.widget.EditText
 import androidx.core.view.isVisible
-import com.aman.androidlibrary.my_helper.R
 
 
 /**
@@ -39,14 +38,14 @@ fun View.changeEnable(isEnabled: Boolean) {
     this.isEnabled = isEnabled
 }
 
-fun View.disable(applyBackground: Boolean = false, backgroundRes: Int = R.color.purple_200) {
+fun View.disable(applyBackground: Boolean = false, backgroundRes: Int) {
     isEnabled = false
     if (applyBackground) {
         setBackgroundResource(backgroundRes)
     }
 }
 
-fun View.enable(applyBackground: Boolean = false, backgroundRes: Int = R.color.purple_500) {
+fun View.enable(applyBackground: Boolean = false, backgroundRes: Int) {
     isEnabled = true
     if (applyBackground) {
         setBackgroundResource(backgroundRes)

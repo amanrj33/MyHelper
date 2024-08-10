@@ -4,7 +4,7 @@ import android.app.Notification
 import android.app.NotificationChannel
 import android.app.NotificationManager
 import android.content.Context
-import com.aman.androidlibrary.my_helper.R
+import androidx.annotation.DrawableRes
 
 object Notifications {
     fun createNotificationChannel(
@@ -31,11 +31,17 @@ object Notifications {
         }
     }
 
-    fun create(context: Context, channelId: String, title: String, text: String): Notification {
+    fun create(
+        context: Context,
+        channelId: String,
+        title: String,
+        text: String,
+        @DrawableRes icon: Int
+    ): Notification {
         return Notification.Builder(context, channelId)
             .setContentTitle(title)
             .setContentText(text)
-            .setSmallIcon(R.drawable.ic_launcher_foreground)
+            .setSmallIcon(icon)
             .build()
     }
 }
