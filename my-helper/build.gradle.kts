@@ -1,20 +1,18 @@
 plugins {
-    alias(libs.plugins.android.application)
+    alias(libs.plugins.android.library)
     alias(libs.plugins.jetbrains.kotlin.android)
+    id("maven-publish")
 }
 
 android {
-    namespace = "com.aman.helper"
+    namespace = "com.aman.androidlibrary.my_helper"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.aman.helper"
         minSdk = 26
-        targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles("consumer-rules.pro")
     }
 
     buildTypes {
@@ -33,6 +31,10 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
+    buildFeatures {
+        dataBinding = true
+    }
 }
 
 dependencies {
@@ -44,7 +46,22 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
+    //utilities
     implementation(libs.gson)
     implementation(libs.easypermissions)
-    implementation(project(":my-helper"))
+    implementation(libs.androidx.swiperefreshlayout)
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            create<MavenPublication>("release") {
+                from(components["release"])
+
+                groupId = "com.github.amanrj33"
+                artifactId = "my-helper"
+                version = "1.0.0"
+            }
+        }
+    }
 }
