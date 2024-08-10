@@ -1,7 +1,9 @@
 MyHelper
 =====
 
-This is to provide helper classes with base implementation.
+An Android library that includes base implementations of commonly used classes across many projects.
+
+This library will streamline the setup process for new projects, significantly reducing the time required to get started.
 
 Implementations that I will get
 -------------------------------
