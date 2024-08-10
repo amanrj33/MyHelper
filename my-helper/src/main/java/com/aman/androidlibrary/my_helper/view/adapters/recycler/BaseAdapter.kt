@@ -41,8 +41,7 @@ abstract class BaseAdapter<Model, Binding : ViewBinding>(
         model: Model
     )
 
-    val itemCount: Int
-        get() = data.size
+    override fun getItemCount(): Int = data.size
 
     override fun replaceList(newList: ArrayList<Model>) {
         data.clear()
