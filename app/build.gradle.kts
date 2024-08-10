@@ -47,5 +47,6 @@ dependencies {
     implementation(libs.gson)
     implementation(libs.easypermissions)
 
-//    implementation (libs.myhelper)
+    //importing the library
+    implementation (libs.myhelper)
 }
