@@ -4,17 +4,17 @@ plugins {
 }
 
 android {
-    namespace = "com.aman.base.helper"
+    namespace = "com.aman.helper"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.aman.base.helper"
+        applicationId = "com.aman.helper"
         minSdk = 26
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
-        version = "1.0.0"
-        group = "com.aman.base.helper"
+        version = "1.0.1"
+        group = "com.aman.helper"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }

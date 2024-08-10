@@ -1,4 +1,4 @@
-package com.aman.base.helper
+package com.aman.helper
 
 import org.junit.Test
 
