@@ -60,7 +60,7 @@ afterEvaluate {
 
                 groupId = "com.github.amanrj33"
                 artifactId = "my-helper"
-                version = "1.0.4"
+                version = "1.0.5"
             }
         }
     }
